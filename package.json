@@ -1,0 +1,32 @@
+{
+  "name": "minimoog-astro-site",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A vintage Minimoog synthesizer web application built with React and Astro",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "start": "astro dev",
+    "deploy": "npm run build"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.3.0",
+    "@radix-ui/react-toast": "^1.2.14",
+    "@radix-ui/react-tooltip": "^1.2.7",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "astro": "^5.12.8",
+    "clsx": "^2.1.1",
+    "loglevel": "^1.9.2",
+    "lucide-react": "^0.536.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-rnd": "^10.5.2",
+    "vitest": "^3.2.4",
+    "zustand": "^5.0.7"
+  }
+}
