@@ -47,7 +47,7 @@ body {
 /* Responsive iframe adjustments */
 @media (max-width: 768px) {
   .iframe-wrapper {
-    height: 6 vh;
+    height: 60vh;
     min-height: 400px;
   }
 }
