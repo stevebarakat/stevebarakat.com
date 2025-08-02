@@ -1,0 +1,89 @@
+---
+// Steve Barakat's main website
+import Layout from "../components/Layout.astro";
+---
+
+<Layout
+  title="Steve Barakat - Developer & Musician"
+  description="Steve Barakat's personal website - Developer, musician, and creator of the Minimoog synthesizer app"
+>
+  <section class="hero">
+    <h1>Steve Barakat</h1>
+    <p>Developer • Musician • Creator</p>
+    <a href="/minimoog" class="cta-button">Try My Minimoog App</a>
+  </section>
+
+  <div class="content">
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate developer and musician who loves creating innovative
+        applications that bridge the gap between technology and creativity. My
+        work focuses on building interactive experiences that inspire and engage
+        users.
+      </p>
+      <p>
+        When I'm not coding, you can find me experimenting with synthesizers,
+        composing music, or exploring new technologies that push the boundaries
+        of what's possible on the web.
+      </p>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Featured Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Minimoog Synthesizer</h3>
+          <p>
+            A vintage-inspired digital synthesizer built with React and Web
+            Audio API. Experience the classic Minimoog sound in your browser
+            with full waveform control and real-time audio synthesis.
+          </p>
+          <a href="/minimoog" class="project-link">Launch App</a>
+        </div>
+        <div class="project-card">
+          <h3>Web Development</h3>
+          <p>
+            Modern web applications built with cutting-edge technologies
+            including React, TypeScript, and Astro. Focused on performance,
+            accessibility, and user experience.
+          </p>
+          <div class="skills">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Astro</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Music Production</h3>
+          <p>
+            Digital audio workstations and music production tools. Creating
+            innovative solutions for musicians and producers using modern web
+            technologies.
+          </p>
+          <div class="skills">
+            <span class="skill-tag">Web Audio API</span>
+            <span class="skill-tag">Synthesis</span>
+            <span class="skill-tag">MIDI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Get In Touch</h2>
+      <p>
+        I'm always interested in new opportunities and collaborations. Whether
+        you want to discuss a project, share ideas, or just say hello, feel free
+        to reach out.
+      </p>
+      <p>Let's create something amazing together!</p>
+    </section>
+  </div>
+
+  <div class="social-links">
+    <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:steve@example.com">Email</a>
+  </div>
+</Layout>

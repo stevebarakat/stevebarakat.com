@@ -1,5 +1,5 @@
 ---
-// Minimoog App Page - Embeds the Minimoog synthesizer as an iframe
+// Minimoog App Page - Shows the Minimoog synthesizer screenshot
 import Layout from "../components/Layout.astro";
 ---
 
@@ -16,15 +16,13 @@ import Layout from "../components/Layout.astro";
     </p>
   </section>
 
-  <div class="iframe-wrapper">
-    <div class="loading">Loading Minimoog Synthesizer...</div>
-    <iframe
-      src="https://minimoog.stevebarakat.com/"
-      class="minimoog-iframe"
+  <div class="screenshot-wrapper">
+    <img
+      src="/images/minimoog-screenshot.png"
+      alt="Minimoog Synthesizer Interface"
+      class="minimoog-screenshot"
       title="Minimoog Synthesizer App"
-      allow="microphone; camera; midi; encrypted-media"
-      sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals"
-    ></iframe>
+    />
   </div>
 
   <div class="app-info">
@@ -69,21 +67,26 @@ import Layout from "../components/Layout.astro";
   </div>
 
   <script>
-    // Add loading state management
-    const iframe = document.querySelector(
-      ".minimoog-iframe"
-    ) as HTMLIFrameElement;
-    const loading = document.querySelector(".loading") as HTMLElement;
+    // Add image loading state management
+    const image = document.querySelector(
+      ".minimoog-screenshot"
+    ) as HTMLImageElement;
 
-    if (iframe && loading) {
-      iframe.addEventListener("load", () => {
-        loading.style.display = "none";
+    if (image) {
+      image.addEventListener("load", () => {
+        console.log("Minimoog screenshot loaded successfully");
       });
 
-      iframe.addEventListener("error", () => {
-        loading.textContent =
-          "Error loading Minimoog app. Please try refreshing the page.";
+      image.addEventListener("error", () => {
+        console.error("Error loading Minimoog screenshot");
       });
     }
   </script>
 </Layout>
+
+<style>
+  /* Override background for minimoog page */
+  body {
+    background: hsl(0, 0%, 10%) !important;
+  }
+</style>
