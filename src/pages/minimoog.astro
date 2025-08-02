@@ -78,21 +78,6 @@ import Layout from "../components/Layout.astro";
     if (iframe && loading) {
       iframe.addEventListener("load", () => {
         loading.style.display = "none";
-
-        // Try to set iframe body background to none
-        try {
-          const iframeDoc =
-            iframe.contentDocument || iframe.contentWindow?.document;
-          if (iframeDoc) {
-            const iframeBody = iframeDoc.querySelector("body");
-            if (iframeBody) {
-              iframeBody.style.background = "none";
-            }
-          }
-        } catch (error) {
-          // Cross-origin restrictions or other errors
-          console.log("Could not access iframe document:", error);
-        }
       });
 
       iframe.addEventListener("error", () => {
