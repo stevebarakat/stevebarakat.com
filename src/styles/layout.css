@@ -1,0 +1,53 @@
+/* Base Layout Styles */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background: var(--color-background);
+  min-height: 100vh;
+}
+
+/* Iframe Components */
+
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+  height: 780px;
+  min-height: 600px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.minimoog-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--radius-xl);
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Responsive iframe adjustments */
+@media (max-width: 768px) {
+  .iframe-wrapper {
+    height: 6 vh;
+    min-height: 400px;
+  }
+}
